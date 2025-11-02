@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MultiShopMicroservices.Order.Application\MultiShopMicroservices.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\MultiShopMicroservices.Order.Domain\MultiShopMicroservices.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\MultiShopMicroservices.Order.Persistense\MultiShopMicroservices.Order.Persistense.csproj" />
+  </ItemGroup>
+
+</Project>
