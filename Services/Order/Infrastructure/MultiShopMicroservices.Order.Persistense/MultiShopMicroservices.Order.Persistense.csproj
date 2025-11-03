@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\Core\MultiShopMicroservices.Order.Domain\MultiShopMicroservices.Order.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShopMicroservices.Orde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShopMicroservices.Order.WebApi", "Services\Order\Presentation\MultiShopMicroservices.Order.WebApi\MultiShopMicroservices.Order.WebApi.csproj", "{79F709D2-48C0-426E-8EB0-D60626D91688}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{EA773822-1A47-4C3C-817A-4496BDB9872B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShopMicroservices.IdentityServer", "IdentityServer\MultiShopMicroservices.IdentityServer\MultiShopMicroservices.IdentityServer.csproj", "{0B816509-9CEA-45A8-AA04-D18481AE96AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{79F709D2-48C0-426E-8EB0-D60626D91688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F709D2-48C0-426E-8EB0-D60626D91688}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79F709D2-48C0-426E-8EB0-D60626D91688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B816509-9CEA-45A8-AA04-D18481AE96AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B816509-9CEA-45A8-AA04-D18481AE96AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B816509-9CEA-45A8-AA04-D18481AE96AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B816509-9CEA-45A8-AA04-D18481AE96AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +84,7 @@ Global
 		{DCDFDDEA-DF6C-4AC8-AF22-89AB1140929D} = {509959AD-91B4-4E2F-8800-8B1BEA59BA0B}
 		{E5AD96EE-D244-497C-BE0F-5DC718E38C92} = {9C73F239-5B4C-418D-A97B-8FBB49A6192F}
 		{79F709D2-48C0-426E-8EB0-D60626D91688} = {E281A4BD-EA2C-487B-84E4-BF4992252976}
+		{0B816509-9CEA-45A8-AA04-D18481AE96AC} = {EA773822-1A47-4C3C-817A-4496BDB9872B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22AC7E24-AB58-48E7-B839-33270F4C3F30}

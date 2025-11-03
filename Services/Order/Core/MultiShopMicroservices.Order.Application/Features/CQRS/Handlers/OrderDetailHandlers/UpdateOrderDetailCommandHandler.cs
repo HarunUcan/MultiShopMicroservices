@@ -27,6 +27,7 @@ namespace MultiShopMicroservices.Order.Application.Features.CQRS.Handlers.OrderD
             values.ProductPrice = command.ProductPrice;
             values.ProductTotalPrice = command.ProductTotalPrice;
             values.ProductAmount = command.ProductAmount;
+            await _repository.UpdateAsync(values);
         }
     }
 }
