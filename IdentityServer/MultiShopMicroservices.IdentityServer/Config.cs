@@ -25,6 +25,14 @@ namespace MultiShopMicroservices.IdentityServer
                 {
                     Scopes = { "OrderFullPermission", "OrderReadPermission" }
                 },
+                new ApiResource("ResourceCargo")
+                {
+                    Scopes = { "CargoFullPermission" }
+                },
+                new ApiResource("ResourceBasket")
+                {
+                    Scopes = { "BasketFullPermission" }
+                },
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -46,6 +54,10 @@ namespace MultiShopMicroservices.IdentityServer
 
                 new ApiScope("OrderFullPermission", "Full access to Order API"),
                 new ApiScope("OrderReadPermission", "Read access to Order API"),
+
+                new ApiScope("CargoFullPermission", "Full access to Cargo API"),
+
+                new ApiScope("BasketFullPermission", "Full access to Basket API"),
 
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
@@ -72,7 +84,7 @@ namespace MultiShopMicroservices.IdentityServer
                 {
                     ClientId = "MultiShopManagerId",
                     ClientName = "Multi Shop Manager User",
-                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     ClientSecrets = { new Secret("multishopsecret".Sha256()) },
                     AllowedScopes =
                     {
@@ -87,7 +99,7 @@ namespace MultiShopMicroservices.IdentityServer
                 {
                     ClientId = "MultiShopAdminId",
                     ClientName = "Multi Shop Admin User",
-                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     ClientSecrets = { new Secret("multishopsecret".Sha256()) },
                     AllowedScopes =
                     {
@@ -96,12 +108,14 @@ namespace MultiShopMicroservices.IdentityServer
                         "DiscountFullPermission",
                         "OrderFullPermission",
                         "OrderReadPermission",
+                        "CargoFullPermission",
+                        "BasketFullPermission",
                         IdentityServerConstants.LocalApi.ScopeName,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile
                     },
-                    AccessTokenLifetime = 600
+                    //AccessTokenLifetime = 600
                 }
             };
 
